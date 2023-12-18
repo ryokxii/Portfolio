@@ -162,6 +162,10 @@ footer li a {
     margin: 50px;
 }
 
+.project-item button:hover {
+    background-color: red;
+}
+
 .container {
     display: flex;
     flex-direction: column;
