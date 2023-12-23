@@ -112,8 +112,6 @@ footer li a {
     color: #ffff;
     padding: 0.25rem 0.7rem;
     margin: 0 0.25rem 1rem 0;
-    /* font-size: 0.8rem;
-    font-weight: 700; */
     text-align: center;
     display: -webkit-box;
     display: -webkit-flex;
@@ -160,6 +158,11 @@ footer li a {
     background: rgb(33, 33, 33);
     opacity: 1;
     margin: 50px;
+}
+
+.section-projects p {
+    font-size: small;
+    text-align: center;
 }
 
 .project-item button:hover {
@@ -210,21 +213,6 @@ footer li a {
     color: #fff;
 }
 
-/* form {
-      max-width: 400px;
-      margin: 20px auto;
-}
-label {
-      display: block;
-      margin-bottom: 8px;
-}
-input,
-textarea {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 16px;
-      box-sizing: border-box;
-} */
 .button:hover {
       background-color: #45a049;
 }
@@ -241,4 +229,87 @@ textarea {
     flex-direction: column;
     align-items: center;
     margin-bottom: 5%;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px; /* Adjust the font size for smaller screens */
+    }
+
+    header {
+        flex-direction: column; /* Stack header items vertically on small screens */
+        align-items: center;
+    }
+
+    .name {
+        margin-right: 0; /* Remove margin for the name on small screens */
+        margin-bottom: 10px; /* Add some space below the name on small screens */
+    }
+
+    .link-items li {
+        margin-right: 10px; /* Remove margin for list items on small screens */
+        margin-bottom: 10px; /* Add some space below list items on small screens */
+    }
+
+    .section-accueil {
+        margin-left: 0; /* Remove left margin on small screens */
+    }
+
+    .section-accueil p {
+        width: 100%; /* Make the paragraph full width on small screens */
+    }
+
+    .col-1,
+    .col-2,
+    .col-3 {
+        flex: 1;
+        margin: 0;
+    }
+
+    .col-2 li {
+        width: 100%; /* Make list items full width on small screens */
+    }
+
+    .section-skills {
+        align-items: center; /* Align skills to the center on small screens */
+    }
+
+    .skill-items {
+        width: 100%; /* Make the skill items full width on small screens */
+    }
+
+    .section-projects {
+        margin: 20px; /* Add margin to the project section on small screens */
+    }
+
+    .project-item {
+        height: fit-content;
+        width: 100%; /* Make the project item full width on small screens */
+        margin: 20px 0; /* Add margin to project items on small screens */
+        flex-direction: column; 
+        padding: 5px;
+    }
+
+    .project-item button {
+        width: 50%;
+        height: 50%;
+    }
+
+    .project-item-link {
+        margin-bottom: 10px;
+    }
+
+    .project-item img {
+        height: 200px;
+        width: 400px;
+    }
+
+    .button {
+        width: 80%; /* Adjust the width of the button on small screens */
+    }
+
+    .section-cv,
+    .section-contact {
+        margin-bottom: 10%; /* Adjust the margin bottom for these sections on small screens */
+    }
 }
